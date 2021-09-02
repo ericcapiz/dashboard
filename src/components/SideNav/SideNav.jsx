@@ -1,5 +1,7 @@
 import React from 'react';
+import Icon from './../Icons/Icon';
 import styles from './SideNav.module.css';
+// import ArrowIcon from './../Icons/ArrowIcon';
 
 const SideNav = () => {
     return (
@@ -15,6 +17,8 @@ const SideNav = () => {
                 <div className={styles.icon}></div>
                 <div className={styles.image}></div>
             </div>
+            <Icon classes={styles.arrow} />
+           
         </aside>
     )
 }
