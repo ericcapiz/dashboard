@@ -1,9 +1,15 @@
-import './App.css';
+import TopNav from './components/TopNav';
+import SideNav from './components/SideNav';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <TopNav />
+      <SideNav />
+      <main> 
+        <Dashboard />
+      </main>
     </div>
   );
 }

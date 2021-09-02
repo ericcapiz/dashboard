@@ -1,13 +1,15 @@
 import React from 'react';
+import SearchBar from '../SearchBar/SearchBar';
 import styles from './TopNav.module.css';
 
 
 
 const TopNav = () => {
     return (
-        <div>
-            TopNav
-        </div>
+        <nav className={`${styles.topNav} d-flex justify-content-between align-items-center px-3`}>
+            <h5 className={styles.brand}>Dashboard</h5>
+            <SearchBar />
+        </nav>
     )
 }
 
