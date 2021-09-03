@@ -12,8 +12,8 @@ const Ranking = ({data}) => {
                     key={`${item.name}-${index}`}
                     name={item.name}
                     index={item.index}
-                    imgName={imgName}
-                    upTrend={upTrend}
+                    imgName={item.imgName}
+                    upTrend={item.upTrend}
                     profit={item.profit} />
             ))}
         </div>

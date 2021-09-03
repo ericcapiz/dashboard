@@ -2,14 +2,14 @@ import React, {Fragment} from 'react'
 import Card from './../Card';
 import Icon from './../Icons/Icon';
 import SingleProduct from '../SingleProduct';
-// import Ranking from '../Ranking';
-// import Stats from '../Stats';
+import Ranking from '../Ranking';
+import Stats from '../Stats';
 import airPodsImg from '../../assets/airpods.jpg';
 import appleImacImg from '../../assets/imac.jpg';
-// import mostProfitableGoods from '../../data/ProfitableSections.json';
-// import mostProfitableCategories from '../../data/profitableCategories.json';
-// import topSellingProducts from '../../data/topSellingProducts.json';
-// import topViewedProducts from '../../data/topViewedProducts.json';
+import mostProfitableGoods from '../../data/ProfitableSections.json';
+import mostProfitableCategories from '../../data/profitableCategories.json';
+import topSellingProducts from '../../data/topSellingProducts.json';
+import topViewedProducts from '../../data/topViewedProducts.json';
 
 import styles from './Dashboard.module.css';
 
@@ -45,7 +45,27 @@ const Dashboard = () => {
                 </div>
                 <div className={styles.section3}>
                     <Card headline="Most Profitable Sections">
-                        {/* start here for ranking */}
+                        <Ranking data={mostProfitableGoods} />
+                    </Card>
+                </div>
+                <div className={styles.section4}>
+                    <Card headline="Most Profitable Categories">
+                        <Ranking data={mostProfitableCategories} />
+                    </Card>
+                </div>
+                <div className={styles.section5}>
+                    <Card headline="Top Selling Products">
+                        <Ranking data={topSellingProducts} />
+                    </Card>
+                </div>
+                <div className={styles.section6}>
+                    <Card headline="Most Viewed Products">
+                        <Ranking data={topViewedProducts} />
+                    </Card>
+                </div>
+                <div className={styles.section7}>
+                    <Card headline="General Statistics">
+                        <Stats />
                     </Card>
                 </div>
             </div>

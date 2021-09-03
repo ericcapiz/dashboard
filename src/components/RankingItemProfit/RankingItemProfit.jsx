@@ -12,7 +12,7 @@ const RankingItemProfit = ({ upTrend, profit }) => {
     return (
         <div className="d-flex">
             {upTrend !== undefined && (
-                <Icon color={uptrend ? LIGHT_GREEN : LIGHT_RED} classes={`mr-2 ${!upTrend && styles.downTrend}`} />
+                <Icon color={upTrend ? LIGHT_GREEN : LIGHT_RED} classes={`mr-2 ${!upTrend && styles.downTrend}`} />
             )}
             <ProfitAmount amount={profit} />
         </div>
