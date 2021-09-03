@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react'
 import Icon from '../Icons/Icon';
+import Card from '../Card';
 import styles from './Dashboard.module.css';
 
 const Dashboard = () => {
@@ -10,7 +11,9 @@ const Dashboard = () => {
                 <h5 className="mb-0 ml-2">Sales Dashboard</h5>
             </header>
             <div className={styles.grid}>
-
+                <div className={styles.section}>
+                    <Card />
+                </div>
             </div>
         </Fragment>
     )
