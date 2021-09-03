@@ -3,13 +3,13 @@ import Card from './../Card';
 import Icon from './../Icons/Icon';
 import SingleProduct from '../SingleProduct';
 // import Ranking from '../Ranking';
-import Stats from '../Stats';
+// import Stats from '../Stats';
 import airPodsImg from '../../assets/airpods.jpg';
 import appleImacImg from '../../assets/imac.jpg';
-import mostProfitableGoods from '../../data/ProfitableSections.json';
-import mostProfitableCategories from '../../data/profitableCategories.json';
-import topSellingProducts from '../../data/topSellingProducts.json';
-import topViewedProducts from '../../data/topViewedProducts.json';
+// import mostProfitableGoods from '../../data/ProfitableSections.json';
+// import mostProfitableCategories from '../../data/profitableCategories.json';
+// import topSellingProducts from '../../data/topSellingProducts.json';
+// import topViewedProducts from '../../data/topViewedProducts.json';
 
 import styles from './Dashboard.module.css';
 

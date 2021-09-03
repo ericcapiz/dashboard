@@ -13,3 +13,8 @@ const SingleProductInsight = ({amount, icon}) => {
 }
 
 export default SingleProductInsight
+
+SingleProductInsight.propTypes = {
+    amount: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+};
